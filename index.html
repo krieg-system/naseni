@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naseni - National Agency for Science and Engineering Infrastructure</title>
+    <!-- Tailwind CSS for modern responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#15803d', // Green representing innovation & sustainability
+                        secondary: '#0f766e',
+                        dark: '#1f2937',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 rounded-xl bg-green-700 flex items-center justify-center text-white font-extrabold text-xl shadow-md">
+                    N
+                </div>
+                <div>
+                    <span class="text-2xl font-black tracking-tight text-gray-900 uppercase">naseni</span>
+                    <span class="block text-xs text-gray-500 font-medium tracking-wide">Engineering Self-Reliance</span>
+                </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-sm font-medium text-gray-600 hover:text-green-700 transition">Mandate</a>
+                <a href="#catalogue" class="text-sm font-medium text-gray-600 hover:text-green-700 transition">Catalogue & Sectors</a>
+                <a href="#institutes" class="text-sm font-medium text-gray-600 hover:text-green-700 transition">R&D Institutes</a>
+                <a href="#partners" class="text-sm font-medium text-gray-600 hover:text-green-700 transition">Partners</a>
+                <a href="#faq" class="text-sm font-medium text-gray-600 hover:text-green-700 transition">FAQ</a>
+            </div>
+
+            <!-- Action CTA -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#catalogue" class="px-5 py-2.5 text-sm font-semibold text-white bg-green-700 hover:bg-green-800 rounded-xl shadow-sm transition">Explore Innovations</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="p-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 px-4 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block px-3 py-2 rounded-lg text-base font-medium text-gray-600 hover:bg-gray-50">Mandate</a>
+            <a href="#catalogue" class="block px-3 py-2 rounded-lg text-base font-medium text-gray-600 hover:bg-gray-50">Catalogue & Sectors</a>
+            <a href="#institutes" class="block px-3 py-2 rounded-lg text-base font-medium text-gray-600 hover:bg-gray-50">R&D Institutes</a>
+            <a href="#partners" class="block px-3 py-2 rounded-lg text-base font-medium text-gray-600 hover:bg-gray-50">Partners</a>
+            <a href="#faq" class="block px-3 py-2 rounded-lg text-base font-medium text-gray-600 hover:bg-gray-50">FAQ</a>
+            <div class="pt-2">
+                <a href="#catalogue" class="w-full text-center block px-4 py-2.5 text-sm font-semibold text-white bg-green-700 hover:bg-green-800 rounded-xl shadow-sm">Explore Innovations</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-20 pb-28 lg:pt-32 lg:pb-36 bg-gradient-to-b from-green-50/50 via-white to-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <span class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold bg-green-100 text-green-800 mb-6 tracking-wide uppercase">
+                    Official Technical Reference & Catalogue 2026
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-black text-gray-900 tracking-tight leading-tight">
+                    Engineering Self-Reliance & <span class="text-green-700">Industrial Growth</span>
+                </h1>
+                <p class="mt-6 text-lg sm:text-xl text-gray-600 leading-relaxed">
+                    The National Agency for Science and Engineering Infrastructure (NASENI) is mandated to establish a solid foundation for Nigeria's industrialization by nurturing indigenous technological capacities and commercializing world-class engineering solutions[cite: 3].
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="#catalogue" class="w-full sm:w-auto px-8 py-4 text-base font-semibold text-white bg-green-700 hover:bg-green-800 rounded-xl shadow-lg shadow-green-200 transition transform hover:-translate-y-0.5">
+                        View Product Catalogue
+                    </a>
+                    <a href="#about" class="w-full sm:w-auto px-8 py-4 text-base font-semibold text-gray-700 bg-white hover:bg-gray-50 border border-gray-200 rounded-xl shadow-sm transition">
+                        Agency Mandate
+                    </a>
+                </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-green-700">30+</div>
+                    <div class="text-sm font-medium text-gray-500 mt-1">Flagship Products[cite: 3]</div>
+                </div>
+                <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-green-700">8</div>
+                    <div class="text-sm font-medium text-gray-500 mt-1">Sectors Covered[cite: 3]</div>
+                </div>
+                <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-green-700">100%</div>
+                    <div class="text-sm font-medium text-gray-500 mt-1">Local Standards[cite: 3]</div>
+                </div>
+                <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-green-700">ISO 9001</div>
+                    <div class="text-sm font-medium text-gray-500 mt-1">Quality Assured[cite: 3]</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Focus Areas & Mandate -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto">
+                <span class="text-xs font-semibold uppercase tracking-wider text-green-700 bg-green-50 px-3.5 py-1 rounded-full">Strategic Framework</span>
+                <h2 class="mt-4 text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">Driving Advanced Technological Solutions</h2>
+                <p class="mt-4 text-lg text-gray-600">Empowering Nigeria and global markets through targeted infrastructure and industrial partnerships[cite: 2].</p>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-green-100 text-green-700 flex items-center justify-center font-bold text-xl mb-6">⚡</div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Renewable Energy</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Off-grid power systems, solar street lighting, and home solar kits for sustainable rural and urban power[cite: 3].</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-green-100 text-green-700 flex items-center justify-center font-bold text-xl mb-6">🚗</div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Electric Mobility</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Public transit solutions, EVs, and commercial tricycles tailored for local road conditions[cite: 3].</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-green-100 text-green-700 flex items-center justify-center font-bold text-xl mb-6">🍲</div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Clean Cooking</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Biomass multi-fuel cookstoves reducing fuel usage and carbon footprint across households[cite: 3].</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-green-100 text-green-700 flex items-center justify-center font-bold text-xl mb-6">💻</div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Consumer Electronics</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Smartphones, laptops, tablets, and computing hardware designed for digital literacy and enterprise[cite: 3].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Catalogue & Sectors -->
+    <section id="catalogue" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-semibold uppercase tracking-wider text-green-700 bg-green-50 px-3.5 py-1 rounded-full">Industrial Directory</span>
+                <h2 class="mt-4 text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">NASENI Product Catalogue Reference</h2>
+                <p class="mt-4 text-lg text-gray-600">Explore flagship innovations categorized across key industrial and technological domains.</p>
+            </div>
+
+            <!-- Category Filter Tabs (Visual Mockup / Filterable cards via Grid) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
+                    <div class="bg-green-700 text-white px-6 py-3 font-semibold text-sm flex justify-between items-center">
+                        <span>Home Appliances</span>
+                        <span class="bg-green-800 text-xs px-2.5 py-1 rounded-full">Item #01</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Twin-Tub Washing Machine</h3>
+                        <p class="text-sm text-gray-600 mb-4">Engineered for durability and everyday use in modern Nigerian households with rust-free plastic polymer construction[cite: 5].</p>
+                        <ul class="space-y-1.5 text-xs text-gray-600 border-t border-gray-100 pt-4">
+                            <li><strong class="text-gray-900">Capacity:</strong> 10 kg Wash / 6.5 kg Spin[cite: 5]</li>
+                            <li><strong class="text-gray-900">Rating:</strong> 220V-240V/50Hz (450W Wash)[cite: 5]</li>
+                            <li><strong class="text-gray-900">Features:</strong> Lint filter, dual water inlet[cite: 5]</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
+                    <div class="bg-green-700 text-white px-6 py-3 font-semibold text-sm flex justify-between items-center">
+                        <span>Home Appliances</span>
+                        <span class="bg-green-800 text-xs px-2.5 py-1 rounded-full">Item #02</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Microwave Oven</h3>
+                        <p class="text-sm text-gray-600 mb-4">Precision heating and cooking unit equipped with safety features and robust digital/rotary controls[cite: 5].</p>
+                        <ul class="space-y-1.5 text-xs text-gray-600 border-t border-gray-100 pt-4">
+                            <li><strong class="text-gray-900">Volume:</strong> 25 Litres Digital/Rotary[cite: 5]</li>
+                            <li><strong class="text-gray-900">Power Output:</strong> 900W Microwave / 1000W Grill[cite: 5]</li>
+                            <li><strong class="text-gray-900">Safety:</strong> Child safety lock, auto shutoff[cite: 5]</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
+                    <div class="bg-green-700 text-white px-6 py-3 font-semibold text-sm flex justify-between items-center">
+                        <span>Entertainment & Display</span>
+                        <span class="bg-green-800 text-xs px-2.5 py-1 rounded-full">Item #03</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">NASENI LED Television</h3>
+                        <p class="text-sm text-gray-600 mb-4">High-definition smart display engineered with energy-efficient components and robust connectivity[cite: 6].</p>
+                        <ul class="space-y-1.5 text-xs text-gray-600 border-t border-gray-100 pt-4">
+                            <li><strong class="text-gray-900">Sizes Available:</strong> 43", 58", 70"[cite: 6]</li>
+                            <li><strong class="text-gray-900">Display:</strong> FHD 1920x1080 / UHD Smart 4K HDR10[cite: 6]</li>
+                            <li><strong class="text-gray-900">Smart OS:</strong> Android TV with Wi-Fi & Ethernet[cite: 6]</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
+                    <div class="bg-green-700 text-white px-6 py-3 font-semibold text-sm flex justify-between items-center">
+                        <span>Climate Control</span>
+                        <span class="bg-green-800 text-xs px-2.5 py-1 rounded-full">Item #04</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Split Air Conditioner (1.5 HP)</h3>
+                        <p class="text-sm text-gray-600 mb-4">Inverter compressor air conditioning unit built for tropical climates with anti-corrosion copper coils[cite: 6].</p>
+                        <ul class="space-y-1.5 text-xs text-gray-600 border-t border-gray-100 pt-4">
+                            <li><strong class="text-gray-900">Capacity:</strong> 1.5 HP (12,000 BTU/h) Inverter[cite: 6]</li>
+                            <li><strong class="text-gray-900">Refrigerant:</strong> Eco-Friendly R32 Gas[cite: 6]</li>
+                            <li><strong class="text-gray-900">Filtering:</strong> High-Density Anti-Bacterial Air Purifier[cite: 6]</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
+                    <div class="bg-green-700 text-white px-6 py-3 font-semibold text-sm flex justify-between items-center">
+                        <span>Electric Mobility</span>
+                        <span class="bg-green-800 text-xs px-2.5 py-1 rounded-full">Item #07</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">NASENI EV Hatchback</h3>
+                        <p class="text-sm text-gray-600 mb-4">Zero-emission urban electric vehicle designed for sustainable commuting and fleet deployment[cite: 8].</p>
+                        <ul class="space-y-1.5 text-xs text-gray-600 border-t border-gray-100 pt-4">
+                            <li><strong class="text-gray-900">Motor:</strong> 35kW Permanent Magnet Synchronous[cite: 8]</li>
+                            <li><strong class="text-gray-900">Battery:</strong> 28.5 kWh LiFePO4 Battery Pack[cite: 8]</li>
+                            <li><strong class="text-gray-900">Range:</strong> 220 km per single charge[cite: 8]</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
+                    <div class="bg-green-700 text-white px-6 py-3 font-semibold text-sm flex justify-between items-center">
+                        <span>Electric Mobility</span>
+                        <span class="bg-green-800 text-xs px-2.5 py-1 rounded-full">Item #08</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">NASENI EV Pickup (Double Cab)</h3>
+                        <p class="text-sm text-gray-600 mb-4">Heavy-duty electric utility vehicle built for agricultural logistics and corporate fleet operations[cite: 8].</p>
+                        <ul class="space-y-1.5 text-xs text-gray-600 border-t border-gray-100 pt-4">
+                            <li><strong class="text-gray-900">Drivetrain:</strong> 80kW Dual Motor / 4WD System[cite: 8]</li>
+                            <li><strong class="text-gray-900">Battery:</strong> 65 kWh Lithium Iron Phosphate[cite: 8]</li>
+                            <li><strong class="text-gray-900">Payload:</strong> 1,200 kg with leaf springs[cite: 8]</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
+                    <div class="bg-green-700 text-white px-6 py-3 font-semibold text-sm flex justify-between items-center">
+                        <span>Energy & Power</span>
+                        <span class="bg-green-800 text-xs px-2.5 py-1 rounded-full">Item #12</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Portable Power Station</h3>
+                        <p class="text-sm text-gray-600 mb-4">High-capacity energy storage unit designed for off-grid deployment, home backup, and emergency relief[cite: 11].</p>
+                        <ul class="space-y-1.5 text-xs text-gray-600 border-t border-gray-100 pt-4">
+                            <li><strong class="text-gray-900">Capacity:</strong> 1,024 Wh LiFePO4 (3,500+ Cycles)[cite: 11]</li>
+                            <li><strong class="text-gray-900">AC Output:</strong> 1000W Pure Sine Wave (2000W Surge)[cite: 11]</li>
+                            <li><strong class="text-gray-900">Features:</strong> Dual wireless charging pads, USB-C PD[cite: 11]</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
+                    <div class="bg-green-700 text-white px-6 py-3 font-semibold text-sm flex justify-between items-center">
+                        <span>Consumer Electronics</span>
+                        <span class="bg-green-800 text-xs px-2.5 py-1 rounded-full">Item #21/#27</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">NASENI Smartphone & Laptop</h3>
+                        <p class="text-sm text-gray-600 mb-4">Indigenous computing and mobile devices equipped for digital literacy, education, and professional tasks[cite: 14, 15].</p>
+                        <ul class="space-y-1.5 text-xs text-gray-600 border-t border-gray-100 pt-4">
+                            <li><strong class="text-gray-900">Smartphone:</strong> 6.5" HD+ 90Hz, 6GB RAM, 50MP Camera[cite: 14]</li>
+                            <li><strong class="text-gray-900">Laptop:</strong> 15.6" FHD, Intel Core i5, 16GB RAM, SSD[cite: 15]</li>
+                            <li><strong class="text-gray-900">OS Compatibility:</strong> Windows 11 Pro & Linux[cite: 15, 24]</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
+                    <div class="bg-green-700 text-white px-6 py-3 font-semibold text-sm flex justify-between items-center">
+                        <span>Education & STEM</span>
+                        <span class="bg-green-800 text-xs px-2.5 py-1 rounded-full">Item #24/#25</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Science & Robotics Education Kits</h3>
+                        <p class="text-sm text-gray-600 mb-4">Interactive learning kits designed to equip secondary and university students with practical engineering skills[cite: 14].</p>
+                        <ul class="space-y-1.5 text-xs text-gray-600 border-t border-gray-100 pt-4">
+                            <li><strong class="text-gray-900">Science Kit:</strong> Physics/Chemistry/Biology modules[cite: 14]</li>
+                            <li><strong class="text-gray-900">Robotics Kit:</strong> Programmable MCU hub, ultrasonic sensors[cite: 14]</li>
+                            <li><strong class="text-gray-900">Curriculum:</strong> Aligned with national educational goals[cite: 14]</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- R&D Institutes Section -->
+    <section id="institutes" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-semibold uppercase tracking-wider text-green-700 bg-green-50 px-3.5 py-1 rounded-full">Research Network</span>
+                <h2 class="mt-4 text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">NASENI R&D Institutes & Testing Laboratories</h2>
+                <p class="mt-4 text-lg text-gray-600">A nationwide network of specialized development institutes ensuring rigorous prototyping and standardization[cite: 21].</p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                    <thead class="bg-gray-100 text-gray-700 text-xs uppercase font-semibold">
+                        <tr>
+                            <th class="py-4 px-6 text-left">Institute Name</th>
+                            <th class="py-4 px-6 text-left">Location / State</th>
+                            <th class="py-4 px-6 text-left">Core Research Mandate</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200 text-sm text-gray-600">
+                        <tr>
+                            <td class="py-4 px-6 font-semibold text-gray-900">PEIID</td>
+                            <td class="py-4 px-6">Minna, Niger State</td>
+                            <td class="py-4 px-6">Power Equipment & Industrial Infrastructure Design[cite: 21]</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 font-semibold text-gray-900">EMDI</td>
+                            <td class="py-4 px-6">Akure, Ondo State</td>
+                            <td class="py-4 px-6">Electronic Measurement & Development Instrumentation[cite: 21]</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 font-semibold text-gray-900">SHELI</td>
+                            <td class="py-4 px-6">Kano State</td>
+                            <td class="py-4 px-6">Solar Energy & Hydrogen Research[cite: 21]</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 font-semibold text-gray-900">PRODA</td>
+                            <td class="py-4 px-6">Enugu State</td>
+                            <td class="py-4 px-6">Projects Development Agency (Materials & Ceramics)[cite: 21]</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 font-semibold text-gray-900">NADDC Collaboration</td>
+                            <td class="py-4 px-6">Abuja / Lagos</td>
+                            <td class="py-4 px-6">Electric Vehicle Powertrain & Battery Testing[cite: 21]</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Partners -->
+    <section id="partners" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-semibold uppercase tracking-wider text-green-700 bg-green-50 px-3.5 py-1 rounded-full">Industrial Collaborations</span>
+                <h2 class="mt-4 text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">Strategic Partners & Directory</h2>
+                <p class="mt-4 text-lg text-gray-600">Collaborating with leading domestic and international manufacturing allies to deliver industrial excellence[cite: 25].</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h4 class="font-bold text-gray-900 text-lg">Imose Mobile</h4>
+                    <p class="text-xs text-green-700 font-semibold mt-1">Consumer Electronics & Computing[cite: 25]</p>
+                    <p class="text-sm text-gray-600 mt-2">Equity/Manufacturing Joint Venture Agreement[cite: 25].</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h4 class="font-bold text-gray-900 text-lg">Elaraby West Africa</h4>
+                    <p class="text-xs text-green-700 font-semibold mt-1">Home Appliances & White Goods[cite: 25]</p>
+                    <p class="text-sm text-gray-600 mt-2">Joint Venture Agreement for regional manufacturing[cite: 25].</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h4 class="font-bold text-gray-900 text-lg">Devfrontier Green Energy</h4>
+                    <p class="text-xs text-green-700 font-semibold mt-1">Solar Photovoltaics & Lighting[cite: 25]</p>
+                    <p class="text-sm text-gray-600 mt-2">Joint Venture Agreement for off-grid power solutions[cite: 25].</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h4 class="font-bold text-gray-900 text-lg">Powerstove Energy</h4>
+                    <p class="text-xs text-green-700 font-semibold mt-1">Clean Biomass Cooking Technology[cite: 25]</p>
+                    <p class="text-sm text-gray-600 mt-2">Equity partnership for sustainable household energy[cite: 25].</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <h4 class="font-bold text-gray-900 text-lg">Whitefog Agrochems</h4>
+                    <p class="text-xs text-green-700 font-semibold mt-1">Agricultural Fertilizers[cite: 25]</p>
+                    <p class="text-sm text-gray-600 mt-2">Joint Venture Agreement supporting agricultural development[cite: 25].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-xs font-semibold uppercase tracking-wider text-green-700 bg-green-50 px-3.5 py-1 rounded-full">Help & Support</span>
+                <h2 class="mt-4 text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <h3 class="font-bold text-gray-900 text-lg">Q1: Are NASENI products available for individual retail purchase?</h3>
+                    <p class="text-sm text-gray-600 mt-2">While bulk orders are managed through institutional procurement and authorized distributors, select consumer electronics and home appliances are available via accredited retail partner stores nationwide[cite: 24].</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <h3 class="font-bold text-gray-900 text-lg">Q2: What maintenance support is provided for solar irrigation pumps and street lights?</h3>
+                    <p class="text-sm text-gray-600 mt-2">All installations include a 3-year maintenance service agreement, with local technician training provided during deployment[cite: 24].</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <h3 class="font-bold text-gray-900 text-lg">Q3: How can private companies establish a Joint Venture Agreement (JVA) with NASENI?</h3>
+                    <p class="text-sm text-gray-600 mt-2">Entities can submit technical proposals through the NASENI partnership portal. Proposals undergo rigorous technical and financial viability evaluations by our commercial directorate[cite: 24].</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <h3 class="font-bold text-gray-900 text-lg">Q4: Do NASENI computing devices support international operating systems?</h3>
+                    <p class="text-sm text-gray-600 mt-2">Yes. All NASENI laptops, tablets, and edge servers come pre-validated with Ubuntu Linux, Windows 11 Pro, and custom Yocto builds[cite: 24].</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <h3 class="font-bold text-gray-900 text-lg">Q5: What certifications do NASENI products hold?</h3>
+                    <p class="text-sm text-gray-600 mt-2">Products carry mandatory compliance certifications from SON, NCC, NAFDAC, NMDPRA, and international standards including ISO 9001 and CE marks[cite: 24].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Col 1 -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-8 h-8 rounded-lg bg-green-700 flex items-center justify-center text-white font-bold">N</div>
+                        <span class="text-lg font-bold text-white uppercase">naseni</span>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        National Agency for Science and Engineering Infrastructure. Engineering Self-Reliance, Industrial Growth & Advanced Technological Solutions[cite: 2].
+                    </p>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#about" class="hover:text-white transition">Agency Mandate</a></li>
+                        <li><a href="#catalogue" class="hover:text-white transition">Product Catalogue</a></li>
+                        <li><a href="#institutes" class="hover:text-white transition">R&D Institutes</a></li>
+                        <li><a href="#partners" class="hover:text-white transition">Strategic Partners</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Headquarters</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        NASENI HQ, Idu Industrial Zone, Abuja, Nigeria[cite: 25].<br>
+                        Support Portal: www.naseni.gov.ng[cite: 25]<br>
+                        Email: info@naseni.gov.ng[cite: 25]
+                    </p>
+                </div>
+
+                <!-- Col 4: Newsletter / Contact mockup -->
+                <div>
+                    <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Institutional Inquiries</h4>
+                    <form onsubmit="event.preventDefault(); showToast();" class="space-y-3">
+                        <input type="email" placeholder="Enter your institutional email" required class="w-full px-4 py-2.5 text-sm rounded-xl bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:border-green-500">
+                        <button type="submit" class="w-full py-2.5 text-sm font-semibold bg-green-700 hover:bg-green-800 text-white rounded-xl transition">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-between text-sm text-gray-500">
+                <p>&copy; 2026 NASENI. All rights reserved. Published in partnership with CHAJUL Consulting Ltd[cite: 2].</p>
+                <div class="flex space-x-6 mt-4 sm:mt-0">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Use</a>
+                    <a href="#" class="hover:text-white transition">Portal Access</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Message Box -->
+    <div id="toast" class="fixed bottom-5 right-5 z-50 hidden bg-gray-900 text-white px-6 py-3 rounded-xl shadow-2xl border border-gray-800 transition transform duration-300">
+        <div class="flex items-center space-x-3">
+            <span class="text-green-400 font-bold">✓</span>
+            <span class="text-sm font-medium">Thank you! Your institutional inquiry has been recorded.</span>
+        </div>
+    </div>
+
+    <script>
+        // Toggle mobile menu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Show toast confirmation function
+        function showToast() {
+            const toast = document.getElementById('toast');
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3500);
+        }
+    </script>
+</body>
+</html>
